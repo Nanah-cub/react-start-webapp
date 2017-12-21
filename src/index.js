@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
-import './pollyfills';
-import './vendor';
-import AppComponent from './app/app';
-
+import './dependencies/pollyfills';
+import './dependencies/vendor';
+import App from './app/app.jsx';
+import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
-    <AppComponent />,
-    document.getElementById('root')
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById('root')
 );
