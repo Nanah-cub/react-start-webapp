@@ -1,0 +1,19 @@
+@import './variables.scss';
+
+.grid-container {
+  width: 100%;
+  background-color: black;
+
+}
+
+@each $name, $value in $grid-map {
+  @each $size, $screen-width in $grid-sizes {
+    :global(.col-#{$size}-#{$name}) {
+      @media (min-width: #{$screen-width}) {
+        width: #{$value};
+        box-sizing: border-box;
+        float: left;
+      }
+    }
+  }
+}

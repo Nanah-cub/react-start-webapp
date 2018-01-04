@@ -1,0 +1,12 @@
+{ "districts": [
+  {
+    "name": "North Asheville",
+    "description": "It is home to many residential neighborhoods"
+  },{
+    "name": "River Arts Districts",
+    "description": "Home to hipsters"
+  },{
+    "name": "Downtown",
+    "description": "B"
+  }
+]}

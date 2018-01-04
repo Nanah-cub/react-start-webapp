@@ -1,0 +1,40 @@
+@import '../../../styles/variables.scss';
+
+
+:local(.coffeeHeader) {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 30px;
+  background: linear-gradient($black-primary, $brown-primary);
+  color: $white-primary;
+  display: block;
+  nav {
+    position: relative;
+    bottom: 5px;
+    overflow: hidden;
+  }
+  :local(.headerNav) {
+    bottom: 0;
+    list-style: none;
+    margin: 0;
+    padding-top: 15px;
+
+    li{
+      @media(min-width: map_get($grid-sizes, 'md')) {
+        display: block;
+        float: left;
+        margin-right: 20px;
+        text-align: center;
+        a {
+          display: block;
+        }
+      }
+    }
+    a {
+      color: $white-primary;
+    }
+  }
+
+}

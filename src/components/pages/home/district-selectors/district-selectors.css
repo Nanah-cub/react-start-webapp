@@ -1,0 +1,41 @@
+:local(.districtAside) table {
+  width: 100%;
+  border-radius: 30px;
+  border: 1px solid black;
+  border-spacing: 0;
+  overflow: hidden;
+}
+:local(.districtAside) table tr:first-child {
+  border-radius: 50px;
+  border: 1px solid black;
+  background: linear-gradient(#4d3f22, black);
+}
+:local(.districtAside) table tr:first-child th {
+  text-decoration: underline;
+}
+:local(.districtAside) table tr {
+  border-spacing: 0;
+  background: black;
+  border: 2px solid black;
+  height: 50px;
+}
+:local(.districtAside) table tr td {
+  text-align: center;
+}
+:local(.districtAside) table tr td span {
+  font-size: 1.1em;
+}
+:local(.districtAside) table tr td span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  :local(.districtAside) {
+    max-width: 300px;
+  }
+}
+
+:local(.active) {
+  color: tan;
+}

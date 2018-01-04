@@ -1,0 +1,35 @@
+:local(.coffeeHeader) {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 30px;
+  background: linear-gradient(black, #4d3f22);
+  color: white;
+  display: block;
+}
+:local(.coffeeHeader) nav {
+  position: relative;
+  bottom: 5px;
+  overflow: hidden;
+}
+:local(.coffeeHeader) :local(.headerNav) {
+  bottom: 0;
+  list-style: none;
+  margin: 0;
+  padding-top: 15px;
+}
+@media (min-width: 768px) {
+  :local(.coffeeHeader) :local(.headerNav) li {
+    display: block;
+    float: left;
+    margin-right: 20px;
+    text-align: center;
+  }
+  :local(.coffeeHeader) :local(.headerNav) li a {
+    display: block;
+  }
+}
+:local(.coffeeHeader) :local(.headerNav) a {
+  color: white;
+}

@@ -1,0 +1,51 @@
+@import '../../../../styles/variables.scss';
+
+:local(.districtAside) {
+
+  table {
+    width: 100%;
+    border-radius: 30px;
+    border: 1px solid black;
+    border-spacing: 0;
+    overflow: hidden;
+
+    tr:first-child {
+      th {
+        text-decoration: underline;
+      }
+      border-radius: 50px;
+      border: 1px solid $black-primary;
+      background: linear-gradient($brown-primary, $black-primary);
+    }
+    tr {
+      border-spacing: 0;
+      background: $black-primary;
+      border: 2px solid black;
+      height: 50px;
+      td {
+        text-align: center;
+        span{
+          font-size: 1.1em;
+        }
+        span:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+}
+
+@media(min-width: map_get($grid-sizes, 'md')) {
+  max-width: 300px;
+}
+
+}
+
+:local(.active) {
+  color: $primary-tan;
+
+}
+
+:local(.notActive){
+
+}

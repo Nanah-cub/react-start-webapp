@@ -802,23 +802,3 @@
     float: left;
   }
 }
-
-html {
-  color: white;
-  background-color: #4d250a;
-}
-
-body {
-  display: block;
-  margin: 0;
-}
-
-.pageComponent {
-  margin: 10px 20px 10px 20px;
-}
-
-.container {
-  height: 100%;
-  width: 100%;
-  margin: 20px 10px 20px 10px;
-}

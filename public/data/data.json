@@ -1,0 +1,10 @@
+{
+  "restuarants": [
+    {
+      "name": "High Five Coffee",
+      "location": "190 Broadway St.",
+      "description": "Coffee Restuarant located in Downtown Asheville",
+      "district": "Downtown"
+    }
+  ]
+}
