@@ -2,7 +2,7 @@ import React from 'react';
 import CoffeeHeader from './template/coffee-header/coffee-header';
 import { Route } from 'react-router-dom';
 import Home from './pages/home/home';
-import RestuarantComponent from './pages/restuarants/restuarants';
+import CafeComponent from './pages/cafes/cafes';
 
 class App extends React.Component {
   render() {
@@ -10,7 +10,7 @@ class App extends React.Component {
       <div>
         <CoffeeHeader />
         <Route exact path="/" component={Home} />
-        <Route path="/restuarants" component={RestuarantComponent} />
+        <Route path="/cafe" component={CafeComponent} />
       </div>
     );
   }

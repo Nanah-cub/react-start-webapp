@@ -30,7 +30,7 @@ class CoffeeHeader extends React.Component {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/restuarants">Restaurants</Link>
+              <Link to="/cafe">Cafes</Link>
             </li>
             <li>
               <a>About</a>

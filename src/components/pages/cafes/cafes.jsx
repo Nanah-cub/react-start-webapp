@@ -1,8 +1,7 @@
 import React from 'react';
-import fetch from 'isomorphic-fetch';
 import ToolTip from '../../widgits/tooltip/tooltip';
 
-class RestuarantComponent extends React.Component {
+class CafeComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -14,11 +13,14 @@ class RestuarantComponent extends React.Component {
     return (
       <div className="col-xs-20 container">
         <aside className="col-xs-20 container">
-          <ToolTip>Hello</ToolTip>
+          <div data-id="hello">GoodBye</div>
+          <ToolTip isShown={true} match="hello">
+            <div>This Component should only be rendered if isShown is true</div>
+          </ToolTip>
         </aside>
       </div>
     );
   }
 }
 
-export default RestuarantComponent;
+export default CafeComponent;
